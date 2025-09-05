@@ -1,0 +1,22 @@
+{
+  "name": "mcp-analytics",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "MCP server for Telnyx Contact Center analytics",
+  "main": "dist/server.js",
+  "scripts": {
+    "dev": "tsx src/server.ts",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/server.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.15.0",
+    "better-sqlite3": "^9.4.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.7.0",
+    "typescript": "^5.5.0",
+    "@types/better-sqlite3": "^7.6.0"
+  }
+}
